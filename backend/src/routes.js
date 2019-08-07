@@ -7,7 +7,7 @@ routes.get('/', (req, res)=>{
 });
 
 routes.post('/devs', (req, res)=> {
-    return res.json({ ok : true});
+    return res.json(req.body);
 });
 
 module.exports = routes;
