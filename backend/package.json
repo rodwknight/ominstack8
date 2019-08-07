@@ -6,8 +6,14 @@
   "repository": "https://github.com/rodwknight/ominstack8",
   "author": "Rodrigo Widmann",
   "license": "MIT",
+  "scripts" : { 
+    "dev" :"nodemon src/server.js"
+  },
   "private": null,
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   }
 }
