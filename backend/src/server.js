@@ -7,7 +7,7 @@ const routes = require('./routes');
 const server = express();
 mongoose.connect("mongodb+srv://omnistack:omnistack@cluster0-02goi.mongodb.net/omnistack8?retryWrites=true&w=majority", { useNewUrlParser : true});
 
-server.user(cors());
+server.use(cors());
 server.use(express.json());
 server.use(routes);
 
